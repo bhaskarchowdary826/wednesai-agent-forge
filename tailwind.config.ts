@@ -156,6 +156,27 @@ export default {
 						transform: 'scale(1)',
 						opacity: '1'
 					}
+				},
+				'moving-border': {
+					'0%': {
+						backgroundPosition: '0% 50%'
+					},
+					'50%': {
+						backgroundPosition: '100% 50%'
+					},
+					'100%': {
+						backgroundPosition: '0% 50%'
+					}
+				},
+				'star-twinkle': {
+					'0%, 100%': {
+						opacity: '0.3',
+						transform: 'scale(0.8)'
+					},
+					'50%': {
+						opacity: '1',
+						transform: 'scale(1.2)'
+					}
 				}
 			},
 			animation: {
@@ -167,7 +188,9 @@ export default {
 				'float': 'float 6s ease-in-out infinite',
 				'shimmer': 'shimmer 2s linear infinite',
 				'rotate-border': 'rotate-border 2s linear infinite',
-				'expand': 'expand 0.3s ease-out'
+				'expand': 'expand 0.5s ease-out',
+				'moving-border': 'moving-border 3s ease infinite',
+				'star-twinkle': 'star-twinkle 2s ease-in-out infinite'
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

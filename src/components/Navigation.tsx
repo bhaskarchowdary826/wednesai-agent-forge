@@ -17,11 +17,11 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo with 3D hover animation */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-8 h-8 bg-wednes-gradient rounded-lg flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg">
+            <div className="w-8 h-8 bg-wednes-gradient rounded-lg flex items-center justify-center transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-12 group-hover:shadow-lg group-hover:shadow-[0_0_20px_rgba(99,102,241,0.5)]">
               <span className="text-white font-bold text-sm">W</span>
             </div>
             <span className="text-xl font-bold text-gray-900 dark:text-white relative">
-              <span className="animate-shimmer bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 dark:from-white dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent bg-[length:200%_100%]">
+              <span className="bg-gradient-to-r from-gray-900 via-blue-600 to-purple-600 dark:from-white dark:via-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
                 WEDNES.AI
               </span>
             </span>
@@ -55,7 +55,7 @@ const Navigation = () => {
             </Link>
             <ThemeToggle />
             <Link to="/login">
-              <Button variant="outline" className="border-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-md">
+              <Button variant="outline" className="border-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition-all duration-300 hover:scale-105 hover:shadow-md hover:border-blue-300 dark:hover:border-blue-600 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)]">
                 Sign In
               </Button>
             </Link>
