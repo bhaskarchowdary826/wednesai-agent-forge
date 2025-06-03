@@ -12,6 +12,8 @@ import AgentBuilder from "./pages/AgentBuilder";
 import MyAgents from "./pages/MyAgents";
 import AgentDetails from "./pages/AgentDetails";
 import Profile from "./pages/Profile";
+import Documentation from "./pages/Documentation";
+import Demo from "./pages/Demo";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -32,6 +34,8 @@ const App = () => (
             <Route path="/my-agents" element={<MyAgents />} />
             <Route path="/agent/:id" element={<AgentDetails />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/docs" element={<Documentation />} />
+            <Route path="/demo" element={<Demo />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
